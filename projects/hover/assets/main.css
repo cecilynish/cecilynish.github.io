@@ -1,0 +1,35 @@
+body {
+    margin-top: 220px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bolder;
+    line-height: 1.4;
+    background-color: springgreen;
+}
+
+.shape {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.shape:hover {
+  -webkit-transform: scale(2.3);
+  cursor: pointer;
+  z-index: -1;
+}
+
+.little {
+    margin-top: 2px;
+    color:  whitesmoke;
+}
+
+.big {
+    margin-top: 1px;
+    color:  springgreen;
+}
