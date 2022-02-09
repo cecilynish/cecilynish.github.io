@@ -1,62 +1,71 @@
-
 body {
-  background-color: beige;
-  font-family: Karla, serif;
-  margin: 50px 300px;
+  background-color: black;
+  color: whitesmoke;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: -80px;
+    font-family: "OpenSansCondensed";
 }
 
 
-@font-face {
-  font-family: Karla;
-  src: url(assets/fonts/Karla-Regular.woff);
-  font-weight: regular;
+
+@font-face{
+  font-family: "BebasNeue";
+  src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "OpenSansCondensed";
+  src: url("../assets/fonts/OpenSansCondensed-Light.ttf") format("truetype"); 
+  font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: Karla;
-  src: url(assets/fonts/Karla-Bold.woff);
+@font-face{
+  font-family: "OpenSansCondensed";
+  src: url("../assets/fonts/OpenSansCondensed-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
+
+
 a:link {
-  color: black;
+  color: white;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: lightblue;
+  color: royalblue;
 }
 
 h1 {
-  font-weight: bold;
-  color: black;
-  font-size: 50px;
+  font-family: "BebasNeue";
+  font-size: 125px;
+  margin-bottom:  -15px;
 }
 
 h2 {
-  font-weight: bold;
-  color: black;
-  font-size: 32px;
-  margin-top: 40px;
+  font-family: "BebasNeue";
+  font-size: 50px;
+  margin-bottom: -10px;
 }
 
 h3 {
   font-weight: bold;
-  color: black;
   font-size: 23px;
+    margin-bottom: -10px;
+    font-family: "OpenSansCondensed";
 
 }
 
 p {
-  font-weight: regular;
-  color: black;
   font-size: 18px;
   letter-spacing: 0px;
+  font-family: "OpenSansCondensed";
 
 }
 
@@ -66,4 +75,15 @@ p {
   line-height: 60px;
   padding-top: 0px;
   padding-right: 8px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.centerimage {
+  text-align: center;
 }
