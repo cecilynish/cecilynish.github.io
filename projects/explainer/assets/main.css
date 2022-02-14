@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  align-items: stretch;
+  margin: auto;
+  padding: 150px 0;
+}
+
+
+.container img {
+  width: 100%;
+  filter: grayscale(100%);
+  filter: blur(2px);
+  cursor: pointer;
+}
+
+.container img:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
