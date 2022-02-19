@@ -1,0 +1,51 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  text-align: left;
+}
+
+@keyframes peopleSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+@keyframes colorSwap {
+  0% {
+    fill: default;
+  }
+  50% {
+    fill: navy;
+  }
+  100% {
+    fill: default;
+  }
+}
+
+#people {
+  animation: peopleSpin 2s infinite;
+  transform-origin:center;
+  transform-box: fill-box;
+}
+
+#star {
+  animation: peopleSpin 2s infinite;
+  transform-origin:center;
+  transform-box: fill-box;
+}
+
+#star polygon{
+  animation: colorSwap 4s ease-in-out infinite;
+}
+
