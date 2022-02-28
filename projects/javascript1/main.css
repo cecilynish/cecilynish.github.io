@@ -1,0 +1,59 @@
+body {
+  background-color:  black;
+   font-family: arial;
+   font-weight: bold;
+}
+
+section {
+  display:  flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:  center;
+  height:  100vh;
+}
+
+.button {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  black;
+  color:  white;
+  font-size:  90px;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button:hover {
+  background-color: skyblue;
+  cursor:  pointer;
+  transform: scale(1.1);
+}
+
+.buttonOn {
+  background-color:  skyblue;
+  color:  white;
+}
+
+.buttonOn:hover {
+  background-color:  black;
+  color:  white;
+  transform: scale(1.1);
+}
+
+.light {
+	background: linear-gradient(-45deg, whitesmoke, skyblue, ghostwhite);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
