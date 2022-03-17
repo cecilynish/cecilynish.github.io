@@ -44,7 +44,7 @@ body {
   font-weight: normal;
   text-align: center;
   -webkit-text-stroke: .5px blue;  
-  min-height: 85vh;
+  min-height: 75vh;
   position: relative;
   }
 
@@ -61,7 +61,13 @@ body {
 
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 870px) {
+.wrapper {
+  min-height: 85vh;
+} 
+}
+
+@media only screen and (max-width: 600px) {
 .footer {
   position: absolute;
   bottom: 0;
@@ -75,6 +81,19 @@ body {
   -webkit-text-stroke: .5px blue;
   color: transparent;
 } 
+
+.footer2 {
+  -webkit-text-stroke: .5px blue;
+  color: transparent;
+    position: absolute;
+  bottom: 0;
+  width: 100%;  
+  margin-bottom: 1.5vw;
+} 
+
+.footer2: hover {
+  color: blue;
+}
 
  a,   a:link, a:visited {
       text-decoration: none;
