@@ -14,7 +14,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   height: 161px;
-  font-stretch: ultra-condensed;
 }
 
 @media only screen and (max-width: 780px) {
