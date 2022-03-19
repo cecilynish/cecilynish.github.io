@@ -16,6 +16,10 @@ body {
   height: 161px;
 }
 
+.content {
+  -webkit-text-stroke: 1.5px blue
+}
+
 @media only screen and (max-width: 780px) {
   .marquee {
     font-size: 90px;
@@ -61,7 +65,7 @@ body {
 
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 780px) {
 .wrapper {
   min-height: 85vh;
 } 
@@ -80,6 +84,7 @@ body {
   margin-bottom: 1.5vw;
   -webkit-text-stroke: .5px blue;
   color: transparent;
+  font-size: 2vw;
 } 
 
 .footer2 {
@@ -94,12 +99,13 @@ body {
  a,   a:link, a:visited {
       text-decoration: none;
       color: transparent;
-      -webkit-text-stroke: .5px blue
+      -webkit-text-stroke: .5Px blue
+
  }
 
  span {
-  color: transparent;
-  -webkit-text-stroke: 1.5px blue
+  color: blue;
+  -webkit-text-stroke: .5px blue
 }
 
 span:hover {
@@ -114,5 +120,7 @@ a:active {
   color: blue;
 }
 
-
-
+.title {
+  color: transparent;
+  -webkit-text-stroke: 1.5px blue
+}
