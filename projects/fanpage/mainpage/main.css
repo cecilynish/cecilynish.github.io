@@ -90,11 +90,22 @@ body {
 .footer2 {
   -webkit-text-stroke: .5px blue;
   color: transparent;
-    position: absolute;
+  width: 100%;  
+  margin-bottom: 1.5vw;
+} 
+
+.footer2:hover {
+  color: blue;
+} 
+
+@media only screen and (max-width: 1300px) {
+.footer2 {
+  position: absolute;
   bottom: 0;
   width: 100%;  
   margin-bottom: 1.5vw;
 } 
+}
 
  a,   a:link, a:visited {
       text-decoration: none;
@@ -103,12 +114,12 @@ body {
 
  }
 
- span {
+.blue {
   color: blue;
   -webkit-text-stroke: .5px blue
 }
 
-span:hover {
+.blue:hover {
   color: blue;
 }
 
@@ -124,3 +135,37 @@ a:active {
   color: transparent;
   -webkit-text-stroke: 1.5px blue
 }
+
+.title:hover {
+  color: blue;
+}
+
+.hover:hover + .hide {
+  display: block;
+  color: blue;
+  width: 60vw;
+  z-index: 2;
+}
+
+.hide {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  margin-left: 7rem;
+  top: 79%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 20vh;
+}
+
+img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+
