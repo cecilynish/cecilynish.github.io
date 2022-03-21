@@ -52,6 +52,16 @@ body {
   position: relative;
   }
 
+  .filler {
+  min-height: 30vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+.filler {
+  min-height: 0vh;
+} 
+}
+
 .paragraph {
   font-size: 2.5vw;
   text-align: justify;
@@ -140,32 +150,20 @@ a:active {
   color: blue;
 }
 
-.hover:hover + .hide {
-  display: block;
-  color: blue;
-  width: 60vw;
-  z-index: 2;
-}
-
-.hide {
-  visibility: hidden;
-  display: flex;
-  position: fixed;
-  margin-left: 7rem;
-  top: 79%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  pointer-events: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 20vw;
-  height: 20vh;
-}
-
 img {
  height: 100%;
  width: 100%;
  object-fit: contain;
 }
 
+.hiddenimg {
+  height: 25%;
+  width: 25%;
+  display: none;
+}
+
+.showimg:hover ~ .hiddenimg {
+  display: block;
+  position: absolute;
+    z-index: -1;
+  }
