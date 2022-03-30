@@ -1,0 +1,166 @@
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: linotype-sabon, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 90px;
+	background-color: skyblue;
+	color: black;
+
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	 }
+
+.tree {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	background-image: url('spread3.jpg');
+	background-size: 300vh;
+	background-position: center;
+	 }
+
+.shadow {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	background-image: url('spread13.jpg');
+	background-size: 300vh;
+	background-position: center;
+	 }
+
+
+.people1 {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	background-image: url('spread5.jpg');
+	background-size: 300vh;
+	background-position: center;
+	 }
+
+.people2 {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	background-image: url('spread11.jpg');
+	background-size: 300vh;
+	background-position: center;
+	 }
+
+
+
+.black {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column; 
+	width: 100%; 
+	text-align: center; 
+	min-height: 100%;
+	align-items: center;
+	background-color: black;
+	color: white;
+	 }
+
+
+
+a:visited, a:link, a:active{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.small{
+font-family: linotype-sabon, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 12px;
+}
+
+.smallwhite{
+font-family: linotype-sabon, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 12px;
+color: white;
+}
+
+.flip{
+transform: rotate(-180deg);
+}
+
+.break {
+	height: 85vh;
+}
+
+.smallbreak {
+	height: 3vh;
+}
+
+.spreadimage {
+  max-height: 650px;
+  height: auto;
+}
+
+.square {
+  max-height: 300px;
+  height: auto;
+}
+
+.alignleft {
+	text-align: justify;
+	width: 95%;
+}
+
+.alignright {
+	text-align: right;
+	width: 95%;
+}
