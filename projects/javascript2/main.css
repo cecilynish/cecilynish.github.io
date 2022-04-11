@@ -22,12 +22,13 @@ body {
   border: 1rem solid;
 }
 
-.flower1 {
+.flower2 {
   background-color: white;
   border-color: hotpink;
+  border-radius: 5%;
 }
 
-.flower2 {
+.flower1 {
   background-color: white;
   border:.5rem solid;
   border-color: slategrey;
@@ -42,6 +43,7 @@ body {
 .flower4 {
   background-color: white;
   border-color: lawngreen;
+  border-radius: 5%;
 }
 
 .flower5 {

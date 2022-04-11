@@ -1,7 +1,7 @@
 
 let flowers = [
-  {name: "Instagram", amount: 295},
   {name: "Are.na", amount: 24},
+  {name: "Instagram", amount: 295},
   {name: "Gmail", amount: 57},
   {name: "Messenger", amount: 494},
   {name: "Twitter", amount: 22},
