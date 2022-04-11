@@ -1,24 +1,55 @@
-
 body {
-  background: rgb(0,254,218);
-  background: linear-gradient(90deg, rgba(0,254,218,1) 0%, rgba(0,91,218,1) 46%, rgba(119,205,203,1) 100%);
-  color:  white;
-  font-family: arial;
-  overflow-x: hidden;
+  background-color:  white;
+  margin: 0;
+  padding: 20px;
 }
 
-.wrapper {
+.garden {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flower {
+  color: black;
+  font-size: 14px;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  border-radius: 10%;
+  border: 1rem solid;
 }
 
-.blob {
-      position: absolute;
-      width: 240px;
-      height: 207px;
-      background: #030961;
-      border-radius: 50%;
-      mix-blend-mode: color-dodge;
+.flower1 {
+  background-color: white;
+  border-color: hotpink;
+}
+
+.flower2 {
+  background-color: white;
+  border:.5rem solid;
+  border-color: slategrey;
+}
+
+.flower3 {
+  background-color: white;
+  border:.75rem solid;
+  border-color: red;
+}
+
+.flower4 {
+  background-color: white;
+  border-color: lawngreen;
+}
+
+.flower5 {
+  border:.5rem solid;
+  border-color: lightblue;
+}
+
+.flower6 {
+  border:.75rem solid;
+  border-color: blue;
 }
