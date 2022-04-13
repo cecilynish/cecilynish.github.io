@@ -1,0 +1,39 @@
+
+body {
+  background-color: black;
+  color:  white;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size:  50px;
+}
+
+svg {
+  /*background-color:  white;*/
+}
+
+.tick {
+  font-size:  20px;
+  letter-spacing: 1px;
+}
+
+.domain {
+  display: none;
+}
+
+line {
+  display: none;
+}
+.rectangle {
+  transition: fill 500ms ease;
+}
+
+.rectangle:hover {
+  fill: #ffffff;
+  cursor: pointer;
+  
+}
