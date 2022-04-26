@@ -1,29 +1,37 @@
 body {
-	margin: 0 auto;
-	padding: 0;
-	min-height: 100vh;
-	overflow-x: hidden;
-	text-align: center;
-	font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 16px;
 }
 
 .title {
-	padding: 20px;
+  padding-top: 22px;
+  padding-bottom: -10px;
+  font-size: 18px;
+}
+
+.subtitle {
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .container{
-	display: flex;
-  	width: 100%;
-  	justify-content: center;
-  	align-items: center;
+  padding-top: 17px;
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 
 .grid {
-	width: 89%;	
-	display: grid;
-	grid-template-columns: repeat(9, minmax(0, 1fr));
-	grid-gap: 1rem;
+  width: 88%; 
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: .5rem;
 }
 
 .grid > div::before {
@@ -32,18 +40,41 @@ body {
   display: block;
 }
 
+.grid2 {
+  width: 90%; 
+  display: grid;
+  grid-template-columns: repeat(12, minmax(110px, 120px));
+  overflow-y: hidden;
+  overflow-x: scroll;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.grid2 > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
 .module {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module img {
+  width: 12vw;
+  height: 12vw;
+  padding: .7vw;
+  background: white;
+  border: 1px solid black;
 }
 
 img {
-	width: 7vw;
-	height: 7vw;
-	padding: .7vw;
-	background: white;
-	border: 1px solid black;
+  width: 92px;
+  height: 92px;
+  padding: 5px;    
+  border: 1px solid black;
 }
 
 input.range {
@@ -142,29 +173,98 @@ input.range::-ms-fill-upper {
 }
 
 text {
-	font-size: 12px;
+  font-size: 14px;
 }
 
-@media only screen and (max-width: 780px) {
-  text {
-    font-size: 8px;
-  }
+.container2 {
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80hv;
+
+
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 920px) {
   .grid {
-  	width: 87%;
+    width: 95%;
     font-size: 8px;
-	grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: .1rem;
   }
 }
 
-@media only screen and (max-width: 780px) {
-	
-img {
-	width: 10vw;
-	height: 10vw;
-	padding: 1vw;
+
+@media only screen and (max-width: 920px) {
+  
+.module img {
+  width: 26vw;
+  height: 26vw;
+  padding: 1.5vw;    
+  border: 1px solid black;
+}
 }
 
+.hidden {
+  display: none;
+}
+
+
+.module1 {
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module2 {
+  grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module3 {
+  grid-row-start: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module4 {
+  grid-row-start: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module5 {
+  grid-row-start: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.presentation {
+  width: "100%";
+}
+
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+ ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid black;
 }
