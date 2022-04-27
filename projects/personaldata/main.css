@@ -43,9 +43,7 @@ body {
 .grid2 {
   width: 90%; 
   display: grid;
-  grid-template-columns: repeat(12, minmax(110px, 120px));
-  overflow-y: hidden;
-  overflow-x: scroll;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   font-size: 14px;
   padding-bottom: 5px;
 }
@@ -71,9 +69,9 @@ body {
 }
 
 img {
-  width: 92px;
-  height: 92px;
-  padding: 5px;    
+  width: 6.25vw;
+  height: 6.25vw;
+  padding: .3vw;    
   border: 1px solid black;
 }
 
@@ -186,7 +184,7 @@ text {
 
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1200px) {
   .grid {
     width: 95%;
     font-size: 8px;
@@ -195,8 +193,43 @@ text {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  
+.grid2 {
+  width: 90%; 
+  display: grid;
+  grid-template-columns: repeat(12, minmax(110px, 120px));
+  overflow-y: hidden;
+  overflow-x: scroll;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+}
+}
 
-@media only screen and (max-width: 920px) {
+
+@media only screen and (max-width: 1200px) {
+  
+.container2 {
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80hv;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+img {
+  width: 92px;
+  height: 92px;
+  padding: 5px;    
+  border: 1px solid black;
+}
+}
+
+@media only screen and (max-width: 1200px) {
   
 .module img {
   width: 26vw;
